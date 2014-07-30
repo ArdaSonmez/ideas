@@ -1,0 +1,19 @@
+<h1> Ideas</h1>
+<% @movies.each do |movie| %>
+<ul>
+  <li>
+<p>
+  <%= "#{movie.name}" %>
+</p>
+<p>
+  <%= "#{movie.explain}" %>
+</p>
+  </li>
+</ul>
+<br>
+<p> <a href=<%="/movie/#{movie.id}"%>> Show </a></p>
+<% end %>
+<p>
+<a href="/new_movie" class="new">New Idea</a>
+</p>
+

@@ -1,0 +1,15 @@
+<h1 class = "arda"> Ideas </h1>
+<h2>
+<%= "#{@movie.name}:" %>
+</h2>
+<h3>
+  <%= "#{@movie.explain}" %>
+</h3>
+<p>
+  <a href=<%="/movie/#{@movie.id}/edit"%>> Edit </a>
+  <a href=<%="/movie/#{@movie.id}/destroy"%>> Delete </a>
+</p>
+<p>
+    <a href="/movies"> All Ideas </a>
+</p>
+  
